@@ -24,7 +24,7 @@ a{
     margin: 0 auto;
 }
 .border-bottom{
-    border-bottom: 1px solid #6b6b6b;
+    border-bottom: 1px solid #d5d5d5;
 }
 
 .header {
@@ -38,15 +38,24 @@ a{
         padding: 0;
         li{
             float: left;
-            a, span{
-                color: #6b6b6b;
+            padding: 0px 15px;
+            a{
+                color: $color_grey_oscuro;
+                float: left;
+                padding: 5px;
+            }
+            span{
+                color: $color_grey_oscuro;
             }
             &:nth-child(1){
-                border-right: 1px solid #6b6b6b;
-                padding: 2px 15px 2px 0px;
+                border-right: 1px solid #d5d5d5;
             }
             &:nth-child(2){
-                padding: 2px 0px 2px 15px;
+                padding-right: 15px;
+            }
+            .icon{
+                font-size: 20px;
+                float: left;
             }
         }
     }
@@ -73,19 +82,27 @@ a{
         li{
             float: left;
             color: #1f1c1c;
-            :last-child a{
-                color: #6b6b6b;
-                border-left: 1px solid #6b6b6b;
+            a{
+                font-size: 14px;
+                padding-bottom: 35px;
+                padding: 5px 15px 35px 15px;
+                text-decoration: none;
+                color: $color_grey_oscuro;
+                &:hover{
+                    color: $color_rojo;
+                    border-bottom: 3px solid $color_naranja;
+                }
+            }
+            &:last-child a{
+                color: $color_grey_oscuro;
+                border-left: 1px solid #d5d5d5;
                 padding-left: 20px;
                 margin-left: 10px;
-            }
-            a{
-                text-decoration: none;
-                padding: 5px 15px;
-                font-size: 14px;
-                color: #000;
-                :hover{
-                    text-decoration: none;
+                font-size: 20px;
+                padding: 0px 15px;
+                &:hover{
+                    color: #df0101;
+                    border-bottom: none;
                 }
             }
         }
@@ -133,7 +150,7 @@ a{
             }
             a{
                 text-align: center;
-                padding: 10px;
+                padding: 3px 5px;
                 background: #6fc561;
                 color: #fff;
                 width: 140px;

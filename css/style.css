@@ -18,7 +18,7 @@ a {
   margin: 0 auto; }
 
 .border-bottom {
-  border-bottom: 1px solid #6b6b6b; }
+  border-bottom: 1px solid #d5d5d5; }
 
 .header {
   width: 1152px;
@@ -30,14 +30,21 @@ a {
     margin: 0;
     padding: 0; }
     .header ul li {
-      float: left; }
-      .header ul li a, .header ul li span {
+      float: left;
+      padding: 0px 15px; }
+      .header ul li a {
+        color: #6b6b6b;
+        float: left;
+        padding: 5px; }
+      .header ul li span {
         color: #6b6b6b; }
       .header ul li:nth-child(1) {
-        border-right: 1px solid #6b6b6b;
-        padding: 2px 15px 2px 0px; }
+        border-right: 1px solid #d5d5d5; }
       .header ul li:nth-child(2) {
-        padding: 2px 0px 2px 15px; }
+        padding-right: 15px; }
+      .header ul li .icon {
+        font-size: 20px;
+        float: left; }
 
 .navegacion {
   width: 1152px;
@@ -58,18 +65,25 @@ a {
     .navegacion .navegacion-menu li {
       float: left;
       color: #1f1c1c; }
-      .navegacion .navegacion-menu li :last-child a {
-        color: #6b6b6b;
-        border-left: 1px solid #6b6b6b;
-        padding-left: 20px;
-        margin-left: 10px; }
       .navegacion .navegacion-menu li a {
-        text-decoration: none;
-        padding: 5px 15px;
         font-size: 14px;
-        color: #000; }
-        .navegacion .navegacion-menu li a :hover {
-          text-decoration: none; }
+        padding-bottom: 35px;
+        padding: 5px 15px 35px 15px;
+        text-decoration: none;
+        color: #6b6b6b; }
+        .navegacion .navegacion-menu li a:hover {
+          color: #df0101;
+          border-bottom: 3px solid #dc4e05; }
+      .navegacion .navegacion-menu li:last-child a {
+        color: #6b6b6b;
+        border-left: 1px solid #d5d5d5;
+        padding-left: 20px;
+        margin-left: 10px;
+        font-size: 20px;
+        padding: 0px 15px; }
+        .navegacion .navegacion-menu li:last-child a:hover {
+          color: #df0101;
+          border-bottom: none; }
 
 .slider {
   background: #abafaf;
@@ -118,7 +132,7 @@ a {
         width: 348px; }
       .slider .slide .slide-descripcion a {
         text-align: center;
-        padding: 10px;
+        padding: 3px 5px;
         background: #6fc561;
         color: #fff;
         width: 140px;
