@@ -2,6 +2,9 @@ body {
   font-size: 12px;
   font-family: 'Lato', sans-serif; }
 
+ul {
+  list-style: none; }
+
 a {
   text-decoration: none; }
   a :hover {
@@ -38,6 +41,20 @@ a {
 
 .border-bottom {
   border-bottom: 1px solid #d5d5d5; }
+
+.breadcrumbs {
+  width: 100%;
+  display: inline-block; }
+  .breadcrumbs ul {
+    float: left;
+    padding: 0px; }
+    .breadcrumbs ul li {
+      float: left; }
+      .breadcrumbs ul li a {
+        font-size: 14px;
+        padding: 8px; }
+        .breadcrumbs ul li a:hover {
+          color: #df0101; }
 
 .header {
   width: 1152px;
@@ -217,6 +234,12 @@ a {
     float: left;
     margin-left: 10px;
     position: relative; }
+    .works .works-work .work-control {
+      float: right; }
+      .works .works-work .work-control li {
+        float: left; }
+        .works .works-work .work-control li a {
+          font-size: 18px; }
     .works .works-work:hover {
       background-color: #dc4e05;
       color: #fff; }
@@ -251,5 +274,50 @@ a {
       float: left; }
       .works .works-work footer h4, .works .works-work footer p {
         margin: 0px; }
+
+.prices .prices-price {
+  width: 22%;
+  float: left;
+  border: 3px solid #eeeeee;
+  margin-right: 30px; }
+  .prices .prices-price:last-child {
+    margin-right: 0; }
+  .prices .prices-price header {
+    background-color: #dc4e05;
+    float: left;
+    width: 60.6%;
+    padding: 15px 50px; }
+    .prices .prices-price header h4 {
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+      font-weight: lighter;
+      margin: 0px; }
+    .prices .prices-price header p {
+      text-align: center;
+      font-size: 15px;
+      color: #fff;
+      font-style: italic;
+      margin: 5px 0px; }
+  .prices .prices-price div {
+    background-color: #fbfef2;
+    border-bottom: 1px solid #bac39f; }
+    .prices .prices-price div h5 {
+      font-size: 20px;
+      font-weight: lighter;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      margin: 5px 0;
+      color: #bac39f; }
+      .prices .prices-price div h5 span {
+        font-size: 70px; }
+    .prices .prices-price div p {
+      font-size: 12px;
+      width: 100%;
+      color: #bac39f;
+      text-align: center;
+      margin-top: 0px;
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

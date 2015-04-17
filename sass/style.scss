@@ -4,9 +4,12 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+ul{
+    list-style: none;
+}
+
 a{
     text-decoration: none;
-
     :hover{
         text-decoration: none;
     }
@@ -46,6 +49,25 @@ a{
 }
 .border-bottom{
     border-bottom: 1px solid #d5d5d5;
+}
+
+.breadcrumbs{
+      width: 100%;
+  display: inline-block;
+    ul{
+        float: left;
+        padding: 0px;
+        li{
+            float: left;
+            a{
+                font-size: 14px;
+                padding: 8px;
+                &:hover{
+                    color: $color_rojo;
+                }
+            }
+        }
+    }
 }
 
 .header {
@@ -250,6 +272,18 @@ a{
         float: left;
         margin-left: 10px;
         position: relative;
+        .work-control{
+            float: right;
+            li{
+                float: left;
+                a{
+                    font-size: 18px;
+                }
+                &:nth-child(1){
+
+                }
+            }
+        }
         &:hover{
             background-color: $color_naranja;
             color: $color_blanco;
@@ -298,4 +332,67 @@ a{
         }
     }
 
+}
+
+.prices{
+    .prices-price{
+        width: 22%;
+        float: left;
+        border: 3px solid $color_gris;
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+        header{
+            background-color: $color_naranja;
+            float: left;
+            width: 60.6%;
+            padding: 15px 50px;
+            h4{
+                text-align: center;
+                font-size: 30px;
+                color: #fff;
+                font-weight: lighter;
+                margin: 0px;
+            }
+            p{
+                text-align: center;
+                font-size: 15px;
+                color: #fff;
+                font-style: italic;
+                margin: 5px 0px;
+            }
+        }
+        div{
+            background-color: #fbfef2;
+            border-bottom: 1px solid $color_grey_verde;
+            h5{
+                font-size: 20px;
+                font-weight: lighter;
+                text-align: center;
+                display: inline-block;
+                width: 100%;
+                margin: 5px 0;
+                color: $color_grey_verde;
+                span{
+                font-size: 70px;
+                }
+            }
+            p{
+                font-size: 12px;
+                width: 100%;
+                color: $color_grey_verde;
+                text-align: center;
+                margin-top: 0px;
+                display: inline-block;
+            }
+        }
+        ul{
+            li{
+                span{
+
+                }
+            }
+        }
+    }
 }
