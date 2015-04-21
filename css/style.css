@@ -357,4 +357,22 @@ p {
     display: inline-block;
     pointer: cursor; }
 
+.footer {
+  background-color: #cdcdcd;
+  display: inline-block; }
+  .footer .footer-content {
+    margin: 0 auto;
+    width: 1152px; }
+    .footer .footer-content article {
+      width: 32%;
+      float: left;
+      margin-left: 15px; }
+      .footer .footer-content article:first-child {
+        margin-left: 0px; }
+      .footer .footer-content article ul {
+        margin: 0;
+        padding: 0; }
+        .footer .footer-content article ul li {
+          float: left; }
+
 /*# sourceMappingURL=style.css.map */
