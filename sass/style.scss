@@ -350,6 +350,10 @@ p{
         border: 3px solid $color_gris;
         margin-right: 30px;
         text-align: center;
+        &:hover{
+            border: 3px solid $color_naranja;
+            box-shadow: 5px 5px 0px #fbe9e3;
+        }
         &:last-child{
             margin-right: 0;
         }

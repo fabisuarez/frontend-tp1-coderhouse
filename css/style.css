@@ -286,6 +286,9 @@ p {
   border: 3px solid #eeeeee;
   margin-right: 30px;
   text-align: center; }
+  .prices .prices-price:hover {
+    border: 3px solid #dc4e05;
+    box-shadow: 5px 5px 0px #fbe9e3; }
   .prices .prices-price:last-child {
     margin-right: 0; }
   .prices .prices-price header {
